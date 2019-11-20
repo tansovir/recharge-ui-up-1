@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Recharge &mdash; UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+    <!-- navigation-section-start -->
+    <div class="section">
+        <header>
+            <nav>
+                <ul class="flex">
+                    <li><a href="#">File</a></li>
+                    <li><a href="#">Info</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!-- navigation-section-end -->
+    <div class="section">
+        <div class="flex">
+            <section class="flexiload">
+                <!-- tabs-start -->
+                <nav class="logo nav nav-tabs" id="nav-tab" role="tablist">
+                    <!--<div class="flex">
+                        <div class="flexiload-nav">-->
+                            <a class="nav-item nav-link active flexiload-text" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Flexi Load</a>
+                        <!--</div>-->
+
+                        <!--<div class="banking-nav">-->
+                            <a class="nav-item nav-link banking-text" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Mobile Banking</a>
+                        <!--</div>-->
+                    <!--</div>-->
+                </nav>
+                <!-- tabs-end -->
+
+                <!-- tabs-content-start -->
+
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <form action="#">
+                            <div class="package">
+                                <div class="flex">
+                                    <div class="package-left">
+                                        <label for="package">Type:</label>
+                                    </div>
+                                    <div class="package-right flex">
+                                        <select id="package">
+                                            <option value="Prepaid">Prepaid</option>
+                                            <option value="Postpaid">Postpaid</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mobile">
+                                <div class="flex">
+                                    <div class="mobile-left">
+                                        <label for="number">Mobile No:</label>
+                                    </div>
+                                    <div class="mobile-right">
+                                        <input type="text" id="number">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="balance">
+                                <div class="flex">
+                                    <div class="balance-left">
+                                        <label for="balance">Amount:</label>
+                                    </div>
+                                    <div class="balance-right flex">
+                                        <input type="text" id="balance">
+                                    </div>
+                                    <div class="button">
+                                        <button type="submit" onclick="document.getElementById('confirm').style.display='block'">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                         <form action="#">
+                            <div class="package">
+                                <div class="flex">
+                                    <div class="package-left">
+                                        <label for="package">Type:</label>
+                                    </div>
+                                    <div class="package-right flex">
+                                        <select id="package">
+                                            <option value="Prepaid">Prepaid</option>
+                                            <option value="Postpaid">Postpaid</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mobile">
+                                <div class="flex">
+                                    <div class="mobile-left">
+                                        <label for="number">Mobile No:</label>
+                                    </div>
+                                    <div class="mobile-right">
+                                        <input type="text" id="number">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="balance">
+                                <div class="flex">
+                                    <div class="balance-left">
+                                        <label for="balance">Amount:</label>
+                                    </div>
+                                    <div class="balance-right flex">
+                                        <input type="text" id="balance">
+                                    </div>
+                                    <div class="button">
+                                        <button type="submit" onclick="document.getElementById('confirm').style.display='block'">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- tabs-content-end -->
+
+            </section>
+
+            <section class="recharge-history">
+                <div class="flex">
+                    <div class="search-name">
+                        <div class="flex" style="margin-bottom:10px;align-items: center;">
+                            <input type="checkbox" id="ref">
+                            <label class="ref" for="ref">Ref. Off</label>
+
+                            <form action="#">
+                                <label class="mobile-s" for="mobile-s">Mob</label>
+                                <input type="text">
+                                <button type="submit">Go</button>
+                            </form>
+                        </div>
+                        <div class="flex" style="align-items: center;">
+                            <input type="checkbox" id="date">
+                            <label class="from" for="from">from</label>
+                            <input type="date" id="from">
+                            <label class="to" for="to">to</label>
+                            <input type="date" id="to">
+                        </div>
+                    </div>
+                    <div class="search-record">
+                        <div class="flex" style="margin-bottom: 15px;">
+                            <p style="color: #ED1C24;">Pen:1</p>
+                            <p style="color: #A349A4;">Pro:0</p>
+                            <p style="color: #22B14C;">Com:285</p>
+                            <p style="color: #7F7F7F;">Can:3</p>
+                        </div>
+                        <div class="">
+                            <div class="box-sizing flex">
+                                <div class="button-x-4">
+                                    <button type="submit">Refresh</button>
+                                </div>
+                                <div class="button-x-1">
+                                    <button type="submit">Resend</button>
+                                </div>
+                                <div class="button-x-2">
+                                    <button type="submit">Complete</button>
+                                </div>
+                                <div class="button-x-3">
+                                    <button type="submit">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-box">
+                    <div class="flex">
+                        <div class="box-1">
+                            <h5>Today's Flexi</h5>
+                        </div>
+
+                        <div class="box-2">
+                            <select>
+                                <option value="All">All</option>
+                                <option value="Grameenhone">Grameenhone</option>
+                                <option value="Teletalk">Teletalk</option>
+                                <option value="Robi">Robi</option>
+                            </select>
+                        </div>
+
+                        <div class="box">
+                            <input type="text">
+                        </div>
+
+                        <div class="box">
+                            <input type="text">
+                        </div>
+
+                        <div class="box">
+                            <input type="text">
+                        </div>
+
+                        <div class="box">
+                            <input type="text">
+                        </div>
+
+                        <div class="box-7">
+                            <input type="checkbox">
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="recharge-histry-table">
+                    
+                    <div class="flex" style="align-items: center;">
+                        <div class="column-1">
+                            <h6>Date</h6>
+                        </div>
+                        <div class="column">
+                            <h6>Type</h6>
+                        </div>
+                        <div class="column">
+                            <h6>Mobile</h6>
+                        </div>
+                        <div class="column">
+                            <h6>Amount</h6>
+                        </div>
+                        <div class="column">
+                            <h6>Route</h6>
+                        </div>
+                        <div class="column">
+                            <h6>Balance</h6>
+                        </div>
+                        <div class="column-l">
+                            <h6></h6>
+                        </div>
+                    </div>
+                    
+                    <div class="flex" style="align-items: center;">
+                        <div class="data-column-1">
+                            <h6>19/11/2019 7:12 AM</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>Prepaid</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>017000000000</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>100</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>017000000000</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>1234.40</h6>
+                        </div>
+                        <div class="data-column-l">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    
+                    <div class="flex" style="align-items: center;">
+                        <div class="data-column-1">
+                            <h6>19/11/2019 7:12 AM</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>Prepaid</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>017000000000</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>100</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>017000000000</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>1234.40</h6>
+                        </div>
+                        <div class="data-column-l">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    
+                    <div class="flex" style="align-items: center;">
+                        <div class="data-column-1">
+                            <h6>19/11/2019 7:12 AM</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>Prepaid</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>017000000000</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>100</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>017000000000</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>1234.40</h6>
+                        </div>
+                        <div class="data-column-l">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    
+                    <div class="flex" style="align-items: center;">
+                        <div class="data-column-1">
+                            <h6>19/11/2019 7:12 AM</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>Prepaid</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>017000000000</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>100</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>017000000000</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>1234.40</h6>
+                        </div>
+                        <div class="data-column-l">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    
+                    <div class="flex" style="align-items: center;">
+                        <div class="data-column-1">
+                            <h6>19/11/2019 7:12 AM</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>Prepaid</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>017000000000</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>100</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>017000000000</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>1234.40</h6>
+                        </div>
+                        <div class="data-column-l">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    
+                    <div class="flex" style="align-items: center;">
+                        <div class="data-column-1">
+                            <h6>19/11/2019 7:12 AM</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>Prepaid</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>017000000000</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>100</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>017000000000</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>1234.40</h6>
+                        </div>
+                        <div class="data-column-l">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    
+                    <div class="flex" style="align-items: center;">
+                        <div class="data-column-1">
+                            <h6>19/11/2019 7:12 AM</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>Prepaid</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>017000000000</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>100</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>017000000000</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>1234.40</h6>
+                        </div>
+                        <div class="data-column-l">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    
+                    <div class="flex" style="align-items: center;">
+                        <div class="data-column-1">
+                            <h6>19/11/2019 7:12 AM</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>Prepaid</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>017000000000</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>100</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>017000000000</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>1234.40</h6>
+                        </div>
+                        <div class="data-column-l">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    
+                    <div class="flex" style="align-items: center;">
+                        <div class="data-column-1">
+                            <h6>19/11/2019 7:12 AM</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>Prepaid</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>017000000000</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>100</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>017000000000</h6>
+                        </div>
+                        <div class="data-column">
+                            <h6>1234.40</h6>
+                        </div>
+                        <div class="data-column-l">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="section modal" id="confirm" class="close">
+        <div class="confirmation-message background animate">
+            <div class="confirmation-header">
+                <h5>Confirmation</h5>
+                <span onclick="document.getElementById('confirm').style.display='none'" class="close">&times;</span>
+            </div>
+            <div class="confirmation-content">
+                <h3>ডিজিটাল রিচার্জ</h3>
+                <h2>Grameen</h2>
+                <h1>017000000000</h1>
+                <h5>885 TK.</h5>
+            </div>
+            <div class="confirmation-button flex">
+                <button href="#" class="confirm-b" type="submit">Confirm</button>
+                <button href="#" class="edit" type="submit">Edit</button>
+                <button href="#" class="cancel" type="submit">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div class="flex">
+        <footer class="copyright">
+            <h2><em>Developed By:</em><a href="https://www.hosting4bd.com" target="_blank"> Hosting4bd Limited</a></h2>
+        </footer>
+    </div>
+
+    <script>
+        var window = document.getElementById('confirm');
+        window.onclick = function(event) {
+            if (event.target == window) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
